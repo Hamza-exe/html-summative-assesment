@@ -5,7 +5,7 @@ Name: Hamza Elafifi
 Course: Software Development 20S
 Teacher: Mr. Hardman
 School: Pembina Trails Early College
-Date Last Modified: Feburary, 25, 2021
+Date Last Modified: April, 4, 2021
  -->
 
  <head>
@@ -13,7 +13,7 @@ Date Last Modified: Feburary, 25, 2021
     <title>Your Intro to Repairing</title>
 
     <meta charset="utf-8"/>
-
+    
     <meta name="viewport" content="initial-scale=1.0, user-scalable=yes"/>
 
  </head>
@@ -34,12 +34,11 @@ Date Last Modified: Feburary, 25, 2021
 
     <iframe name="Restoration video" frameborder="0" width="800" height="600"></iframe>
 
-        <a href="https://www.howtogeek.com/196687/ask-htg-why-do-old-computers-and-game-consoles-turn-yellow/" target="Restoration video">
-            Restoration Tutorial!
-        </a>
+    <a href="https://www.howtogeek.com/196687/ask-htg-why-do-old-computers-and-game-consoles-turn-yellow/" target="Restoration video">Restoration Tutorial!</a>
 
     <!--Table of list of materials needed-->
     <b><h2>Materials that you will need to get started!</h2></b>
+
     <table>
         <tr>
             <th>Materials</th>
@@ -70,26 +69,28 @@ Date Last Modified: Feburary, 25, 2021
     <u><h2>Still need help? Contact me below for any questions!</h2></u>
     <form action="/action_page.php">
 
-        <!--Customer fills their Email address info -->
-        <label for="eaddress">Email Address:</label><br>
-        <input type="text" id="eaddress" name="eaddress" placeholder="Please Enter your Email Address" size="30" maxlength="100" ><br>
+          <!--Customer fills their Email address info -->
+          <label for="eaddress">Email Address:</label><br>
+          <input type="text" id="eaddress" name="eaddress" placeholder="Please Enter your Email Address" size="30" maxlength="100" ><br>
       
-        <!--Place user contact name -->
-        <label for="uname">Name:</label><br>
-        <input type="text" id="uname" name="uname" placeholder="Jane Doe" size="30" maxlength="7"><br><br>
+          <!--Place user contact name -->
+          <label for="uname">Name:</label><br>
+          <input type="text" id="uname" name="uname" placeholder="Jane Doe" size="30" maxlength="7"><br><br>
       
-        <!--Asks user to choose type of videogame they need help with-->
-        <u><b><p>Please Choose Type of Videogame</p></b></u>
+          <!--Asks user to choose type of videogame they need help with-->
+          <u><b><p>Please Choose Type of Videogame</p></b></u>
       
-        <label for="videogametype">Choose Videogame Type</label>
+          <!--Label asking to choose videogame type-->
+          <label for="videogametype">Choose Videogame Type</label>
       
-        <!--Dropdown list for type of videogame they need help with-->
-        <select name="type" id="type">
-          <option value="console">Console</option>
-          <option value="game">Game</option>
-        </select><br><br>
+          <!--Dropdown list for type of videogame they need help with-->
+          <select name="type" id="type">
+            <option value="console">Console</option>
+            <option value="game">Game</option>
+          </select><br><br>
       
-        <u><b>Select Manufacturer</b></u><br><br>
+          <!--Title asking the visiter who the manufacturer is-->
+          <u><b>Select Manufacturer</b></u><br><br>
       
           <!--Radio buttons for the manufacturers name -->
           <label> <input type="radio" name="manufacture" value="" checked="checked">Other</label>
@@ -97,16 +98,14 @@ Date Last Modified: Feburary, 25, 2021
           <label> <input type="radio" name="manufacture">Sony/Microsoft</label> <br><br>
 
           <!--Colour selector for user to select their videogames colour-->
-          <form action="/action_page.php">
-            <label for="consolecolor"><u><b>Select the Videogame colour:</b></u></label><br><br>
-            <input type="color" id="consolecolor" name="consolecolor" value="#ff0000">
-          </form><br><br>
+          <!--Code used for colour was sourced from: https://www.w3schools.com/tags/att_input_type_color.asp-->
+          <label for="consolecolor"><u><b>Select the Videogame colour:</b></u></label><br><br>
+          <input type="color" id="consolecolor" name="consolecolor" value="#ff0000"><br><br>
       
           <!--Date of videogame release date for user to input-->
-          <form action="/action_page.php">
-            <label for="releasedate"><b><u>Videogame Release Date:</u></b></label><br><br>
-            <input type="date" id="releasedate" name="releasedate">
-          </form><br><br>
+          <!--Code used for date form was sourced from: https://www.w3schools.com/tags/att_input_type_date.asp-->
+          <label for="releasedate"><b><u>Videogame Release Date:</u></b></label><br><br>
+          <input type="date" id="releasedate" name="releasedate"><br><br>
 
           <!--Asks user what they need help with and they type on the text box-->
           <i><label for="request">What do you need help with?</label><br></i>
@@ -114,14 +113,16 @@ Date Last Modified: Feburary, 25, 2021
           <!--Text box area for user to ask question-->
           <textarea id="request" name="request" rows="4" cols="40"> </textarea><br>
       
-          <!--Checkbox for whether the customer wishes to have payment methods used and signup for updates -->
+          <!--Checkbox for whether the visiter would like to recieve regular updates to the website and accepts to have their data collected -->
           <label> <input type="checkbox" name="esign" value="" checked="checked"><i>Recieve Regular Email updates from HamTendo</i></label><br>
           <label> <input type="checkbox" name="save" value="" checked="checked"><i>I accept to have data collected for commercial purposes</i></label><br><br>
       
           <!--Submit button for user to send their request-->
-        <input type="submit" value="Submit"><br><br>
-      
-      </form> 
+          <input type="submit" value="Submit"><br><br>
 
-      <br><br><a href="index.html">Click here to get back to home page!</a></br></br>
+          <!--Button to get back to webpage Index-->
+          <br><br><a href="index.html">Click here to get back to home page!</a></br></br>
+
+    </form> 
+
  </body>
